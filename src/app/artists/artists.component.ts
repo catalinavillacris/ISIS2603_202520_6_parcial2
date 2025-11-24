@@ -9,6 +9,6 @@ import { artist } from '../../modelo/artist';
 export class ArtistsComponent {
 
   @Input() artists: artist[] = [];
-  @Output() selectArtist = new EventEmitter<artist>();
+  @Output() getAlbums = new EventEmitter<artist>();
 
 }

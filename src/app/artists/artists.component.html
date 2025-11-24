@@ -1,1 +1,8 @@
-<p>artists works!</p>
+<div class="list-artists">
+    @for (a of artists; track a.id){
+        <div>
+            <img [src]="a.image" alt="{{a.name}}">
+            <span>{{a.name}}</span>
+        </div>
+    } 
+</div>

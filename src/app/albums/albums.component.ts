@@ -9,7 +9,7 @@ import { album } from '../../modelo/album';
 export class AlbumsComponent {
 
   @Input() albums: album[] = [];
-  @Output() selectAlbum = new EventEmitter<album>();
+  @Output() getTracks = new EventEmitter<album>();
   @Output()  loveAlbum = new EventEmitter<album>();
 
 }

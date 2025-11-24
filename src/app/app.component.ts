@@ -32,13 +32,11 @@ export class AppComponent implements OnInit {
     }
   }
 
-  getTracks(artist: artist, album: album){
-    const artistExists = this.artists.find(a => a.id === artist.id) ;
-    if(artistExists){
-      const albumExists = artistExists.albums.find(al => al.id === album.id);
+  getTracks( album: album){
+    
+      const albumExists = this.albums.find(al => al.id === album.id);
       if(albumExists){
         this.tracks = albumExists.tracks;
-      }
     }
   }
 
