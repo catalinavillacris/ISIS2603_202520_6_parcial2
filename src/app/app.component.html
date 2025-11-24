@@ -9,12 +9,14 @@
   <div class="container-selections">
       <div class="container-albums">
         <app-albums
+        [albums]="albums"
         (getTracks)="getTracks($event)"
         (loveAlbum)="loveAlbum($event)"></app-albums>
       </div>
     
       <div class="container-tracks">
         <app-tracks
+        [tracks]="tracks"
         (loveTrack)="loveTrack($event)"></app-tracks>
       </div>
   </div>
